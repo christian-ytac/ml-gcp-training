@@ -14,7 +14,7 @@ const getConfig = () => {
 
   // Check if we're using a Unix socket path (starts with /)
   if (process.env.DB_HOST && process.env.DB_HOST.startsWith('/')) {
-    config.socketPath = process.env.DB_HOST;
+    // config.socketPath = process.env.DB_HOST;
   } else {
     // Otherwise use host/port (for local development)
     config.host = process.env.DB_HOST || 'localhost';
