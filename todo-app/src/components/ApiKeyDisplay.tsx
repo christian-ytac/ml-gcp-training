@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 const ApiKeyDisplay: React.FC = () => {
   const [showApiKey, setShowApiKey] = useState(false);
-  const apiKey = process.env.NEXT_PUBLIC_API_KEY || 'API key not available';
+  const apiKey = process.env.NEXT_PUBLIC_API_KEY || 'Mlinc1234!';
 
   const toggleApiKey = () => {
     setShowApiKey(!showApiKey);
